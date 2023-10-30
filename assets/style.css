@@ -5,3 +5,91 @@
     box-sizing: border-box;
     font-family: 'Indie Flower',cursive;
 }
+body{
+    background-color: rgba(225, 205, 152, 1);
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+.title{
+    color: #fff;
+}
+nav{
+    flex: 1;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: x-large;
+}
+nav ul .home i{
+    letter-spacing: 0.5em;
+}
+nav ul .home{
+    color: #fff;
+}
+nav ul .about{
+    color: #fff;
+}
+nav ul li #toggle{
+    height: 20px;
+    width: 60px;
+    text-align: right;
+    border-radius: 15px;
+    border: none;
+    padding-top: 2px;
+    padding-right: 5px;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
+section{
+    display: grid;
+    grid-template-rows: repeat(6,100px);
+    grid-template-columns: repeat(14,100px);
+}
+.mode{
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 2px 2px 9px 1px #686060;
+    border-radius: 30px;
+    border: none;
+}
+section ul li{
+    list-style-type: none;
+    position: relative;
+    top: 50px;
+    left: 24%;
+}
+.btn{
+    border: none;
+    height: 55px;
+    width: 201px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 9px 1px #686060;
+    font-size: larger;
+    font-weight: 600;
+}
+section .mode .gif{
+    height: 200px;
+    width: 400px;
+    background-image: url(/gif/giphy.gif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    top: 75px;
+    border: none;
+}

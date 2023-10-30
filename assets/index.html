@@ -8,15 +8,26 @@
 </head>
 <body>
     <header>
-        <h3>Tic Tac Toe</h3>
+        <h2 class="title">Tic Tac Toe</h2>
         <nav>
             <ul>
-                <li><i class="fa-solid fa-house"></i>Home</li>
-                <li>About</li>
-                <li><button><i class="fa-solid fa-sun"></i></button></li>
+                <li class="home"><i class="fa-solid fa-house"></i>Home</li>
+                <li class="about">About</li>
+                <li><button id="toggle"><i class="fa-solid fa-sun"></i></button></li>
             </ul>
         </nav>
     </header>
+
+    <section>
+        <div class="mode">
+            <ul>
+                <li><button class="btn" id="single">SinglePlayer</button></li>
+                <li><button class="btn" id="multi">MultiPlayer</button></li>
+                <li><button class="btn" id="setting">Settings</button></li>
+            </ul>
+            <div class="gif"></div>
+        </div>
+    </section>
     <script src="https://kit.fontawesome.com/4f9d824da5.js" crossorigin="anonymous"></script>
 </body>
 </html>
