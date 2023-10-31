@@ -76,6 +76,20 @@ section{
     border-radius: 30px;
     border: none;
 }
+section #tab2{
+    height: 600px;
+    width: 1200px;
+    grid-row-start: 1;
+    position: relative;
+    top: 50px;
+    right: 450px;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 2px 2px 9px 1px #686060;
+    border-radius: 30px;
+    border: none;
+}
 section ul li{
     list-style-type: none;
     position: relative;
@@ -102,4 +116,27 @@ section .main .gif{
     position: relative;
     top: 75px;
     border: none;
+}
+.image{
+    height: 300px;
+    width: 25%;
+    background-image: url(/images/Tic\ Tac\ Toe.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 23px;
+    box-shadow: 2px 2px 9px 1px #686060;
+    float: left;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.paragraph{
+    height: 300px;
+    width: 60%;
+    float: right;
+    padding-top: 30px;
+    padding-right: 90px;
+}
+.heading{
+    text-align: center;
+    padding-top: 20px;
 }
