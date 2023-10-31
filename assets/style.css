@@ -49,12 +49,22 @@ nav ul li #toggle{
     padding-right: 5px;
     box-shadow: 2px 2px 9px 1px #686060;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav a.active,
+header nav a:hover{
+    background-color: #fff;
+    color: rgba(225, 205, 152, 1);
+    border-radius: 9px;
+}
 section{
     display: grid;
     grid-template-rows: repeat(6,100px);
     grid-template-columns: repeat(14,100px);
 }
-.mode{
+.main{
     grid-row-start: 2;
     grid-row-end: 7;
     grid-column-start: 7;
@@ -82,7 +92,7 @@ section ul li{
     font-size: larger;
     font-weight: 600;
 }
-section .mode .gif{
+section .main .gif{
     height: 200px;
     width: 400px;
     background-image: url(/gif/giphy.gif);
