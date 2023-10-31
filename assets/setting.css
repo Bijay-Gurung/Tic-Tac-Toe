@@ -125,3 +125,12 @@ form{
     border-radius: 5px;
     margin-top: 170px;
 }
+.content .header h2{
+    text-align: center;
+}
+.content .footer #close{
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
