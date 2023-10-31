@@ -103,19 +103,25 @@ form{
     margin-left: 16%;
 }
 .helpcontent{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-
     z-index: 1;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
 }
 .content{
-    background-color: #fff;
+    background-color: rgba(225, 205, 152, 1);
+    box-shadow: 2px 2px 9px 1px #686060;
+    color: #fff;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
     padding-top: 50px;
     border-radius: 5px;
+    margin-top: 170px;
 }
