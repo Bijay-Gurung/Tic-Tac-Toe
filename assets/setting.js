@@ -1,11 +1,29 @@
-const helpbtn = document.getElementById('help');
-const modal = document.getElementById('helps');
-const closebtn = document.getElementById('close');
+function help(){
+    const helpbtn = document.getElementById('help');
+    const modal = document.getElementById('helps');
+    const closebtn = document.getElementById('close');
+    
+    helpbtn.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+    
+    closebtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
+help();
 
-helpbtn.addEventListener('click', () => {
-    modal.style.display = 'block';
-});
+function credit(){
+    const creditbtn = document.getElementById('credit');
+    const modals = document.getElementById('credits');
+    const closedbtn = document.getElementById('close1');
 
-closebtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
+    creditbtn.addEventListener('click',() =>{
+        modals.style.display = 'block';
+    });
+
+    closedbtn.addEventListener('click', () =>{
+        modals.style.display = 'none';
+    });
+}
+credit();
