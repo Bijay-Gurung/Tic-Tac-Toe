@@ -102,3 +102,20 @@ form{
 #help{
     margin-left: 16%;
 }
+.helpcontent{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+}
+.content{
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding-top: 50px;
+    border-radius: 5px;
+}
