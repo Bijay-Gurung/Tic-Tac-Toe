@@ -64,80 +64,41 @@ section{
     grid-template-rows: repeat(6,100px);
     grid-template-columns: repeat(14,100px);
 }
-.main{
-    grid-row-start: 2;
-    grid-row-end: 7;
-    grid-column-start: 7;
-    grid-column-end: 11;
-    background-color: #ffffff05;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(25px);
-    box-shadow: 2px 2px 9px 1px #686060;
-    border-radius: 30px;
-    border: none;
-}
-section #tab2{
-    height: 600px;
-    width: 1200px;
-    grid-row-start: 1;
-    position: relative;
-    top: 50px;
-    right: 450px;
-    background-color: #ffffff05;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(25px);
-    box-shadow: 2px 2px 9px 1px #686060;
-    border-radius: 30px;
-    border: none;
-}
-section ul li{
-    list-style-type: none;
-    position: relative;
-    top: 50px;
-    left: 24%;
-}
 .btn{
     border: none;
-    height: 55px;
-    width: 201px;
-    margin-bottom: 20px;
+    height: 30px;
+    width: 100px;
     border-radius: 30px;
     box-shadow: 2px 2px 9px 1px #686060;
     font-size: larger;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 60px;
+    margin-left: 17%;
 }
-section .main .gif{
-    height: 200px;
-    width: 400px;
-    background-image: url(/gif/giphy.gif);
-    background-position: center;
-    background-size: cover;
+.setting{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
     border-radius: 30px;
-    position: relative;
-    top: 75px;
-    border: none;
-}
-.image{
-    height: 300px;
-    width: 25%;
-    background-image: url(/images/Tic\ Tac\ Toe.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 23px;
     box-shadow: 2px 2px 9px 1px #686060;
-    float: left;
-    margin-top: 30px;
-    margin-left: 60px;
 }
-.paragraph{
-    height: 300px;
-    width: 60%;
-    float: right;
-    padding-top: 30px;
-    padding-right: 90px;
-}
-.heading{
+.setting h1{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
+    font-size: x-large;
+    text-decoration-line: underline;
+}
+form{
+    position: relative;
+    top: 20px;
+    left: 42%;
+    font-size: x-large;
+}
+#help{
+    margin-left: 16%;
 }
