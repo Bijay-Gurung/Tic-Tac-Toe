@@ -21,13 +21,16 @@
         <div class="setting">
             <h1>Settings</h1>
             <form>
-            <input type="radio" id="music" name="music">
-            <label for="music">Music</label><br>
-            <input type="radio" id="sfx" name="sfx">
-            <label for="sfx">Sfx</label>
+            <input type="radio" id="musicRadio" name="sound">
+            <label for="musicRadio">Music</label><br>
+            <input type="radio" id="sfxRadio" name="sound">
+            <label for="sfxRadio">Sfx</label>
             </form>
             <button id="help" class="btn" data-toggle="modal" data-target="helps">Help</button>
             <button id="credit" class="btn" data-toggle="modal" data-target="credits">Credit</button>
+
+            <audio id="music" src="/audio/Cute Creatures.mp3" loop></audio>
+            <audio id="sfx" src="/audio/Stone Dropping.aac"></audio>
         </div>
 
         <section class="info">
@@ -68,5 +71,6 @@
 
     <script src="https://kit.fontawesome.com/4f9d824da5.js" crossorigin="anonymous"></script>
     <script src="/assets/setting.js"></script>
+    <script src="/assets/music.js"></script>
 </body>
 </html>
