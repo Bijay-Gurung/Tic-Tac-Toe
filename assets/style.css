@@ -141,3 +141,122 @@ section .main .gif{
     text-align: center;
     padding-top: 20px;
 }
+
+.btns{
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 9px 1px #686060;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-left: 17%;
+}
+.setting{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 30px;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
+.setting h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: x-large;
+    text-decoration-line: underline;
+}
+form{
+    position: relative;
+    top: 20px;
+    left: 42%;
+    font-size: x-large;
+}
+#help{
+    margin-left: 16%;
+}
+.helpcontent{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+}
+.content{
+    background-color: rgba(225, 205, 152, 1);
+    box-shadow: 2px 2px 9px 1px #686060;
+    color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding-top: 50px;
+    border-radius: 5px;
+    margin-top: 170px;
+}
+.content .header h2{
+    text-align: center;
+}
+.content .footer #close{
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
+.creditcontent{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+}
+.profileCard{
+    background-color: rgba(225, 205, 152, 1);
+    box-shadow: 2px 2px 9px 1px #686060;
+    color: #fff;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding-top: 50px;
+    border-radius: 5px;
+    margin-top: 170px;
+}
+.profileCard .body img{
+    border-radius: 9px;
+}
+.profileCard .body{
+    margin-left: 37%;
+}
+.profileCard .body h3{
+    font-weight: 600;
+    font-size: x-large;
+}
+.profileCard .body p{
+    font-weight: 600;
+    font-size: large;
+}
+.profileCard .body a{
+    color: #fff;
+    margin-left: 35px;
+    font-size: large;
+}
+.profileCard .footer #close1{
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
