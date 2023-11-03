@@ -65,8 +65,8 @@ section{
     grid-template-columns: repeat(14,100px);
 }
 .main{
-    grid-row-start: 2;
-    grid-row-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 6;
     grid-column-start: 7;
     grid-column-end: 11;
     background-color: #ffffff05;
@@ -75,9 +75,10 @@ section{
     box-shadow: 2px 2px 9px 1px #686060;
     border-radius: 30px;
     border: none;
+    margin-top: 50px;
 }
 section #tab2{
-    height: 600px;
+    height: 448px;
     width: 1200px;
     grid-row-start: 1;
     position: relative;
@@ -93,7 +94,7 @@ section #tab2{
 section ul li{
     list-style-type: none;
     position: relative;
-    top: 50px;
+    top: 40px;
     left: 24%;
 }
 .btn{
@@ -140,45 +141,6 @@ section .main .gif{
 .heading{
     text-align: center;
     padding-top: 20px;
-}
-
-.btns{
-    border: none;
-    height: 30px;
-    width: 100px;
-    border-radius: 30px;
-    box-shadow: 2px 2px 9px 1px #686060;
-    font-size: larger;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 60px;
-    margin-left: 17%;
-}
-.setting{
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 7;
-    grid-column-end: 11;
-    background-color: #ffffff05;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(25px);
-    border-radius: 30px;
-    box-shadow: 2px 2px 9px 1px #686060;
-}
-.setting h1{
-    text-align: center;
-    padding-top: 50px;
-    font-size: x-large;
-    text-decoration-line: underline;
-}
-form{
-    position: relative;
-    top: 20px;
-    left: 42%;
-    font-size: x-large;
-}
-#help{
-    margin-left: 16%;
 }
 .helpcontent{
     display: none;
