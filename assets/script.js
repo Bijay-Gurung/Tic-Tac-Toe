@@ -53,3 +53,17 @@ function credit(){
     });
 }
 credit();
+
+function music() {
+    const audio = document.getElementById('background-music');
+    const musicImage = document.getElementById('music-image');
+
+    if(audio.paused){
+        audio.play();
+        musicImage.src="/images/musical-note.png";
+    }
+    else{
+        audio.pause();
+        musicImage.src="/images/silent.png";
+    }
+}

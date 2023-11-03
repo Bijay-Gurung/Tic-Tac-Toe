@@ -13,6 +13,7 @@
             <ul>
                 <li class="home"><a href="/assets/index.html" class="active" data-toggle="tab1"><i class="fa-solid fa-house"></i>Home</a></li>
                 <li class="about"><a href="#" data-toggle="tab2">About</a></li>
+                <li><button id="music" onclick="music()"><img id="music-image" src="/images/musical-note.png" height="20px" width="20px"></button></li>
                 <li><button id="toggle"><i class="fa-solid fa-sun"></i></button></li>
             </ul>
         </nav>
@@ -73,9 +74,13 @@ That aside, people have started to realize that Tic-Tac-Toe is just a game; a ra
                 </div>
             </div>
         </section>
-
-        <audio id="music" src="/audio/Cute Creatures.mp3" loop></audio>
     </section>
+
+    <div class="audio">
+        <audio id="background-music" src="/audio/Cute Creatures.mp3" loop></audio>
+    </div>
+    
+    
     <script src="https://kit.fontawesome.com/4f9d824da5.js" crossorigin="anonymous"></script>
     <script src="/assets/script.js"></script>
 </body>

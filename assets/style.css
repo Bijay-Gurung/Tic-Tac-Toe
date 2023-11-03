@@ -49,6 +49,14 @@ nav ul li #toggle{
     padding-right: 5px;
     box-shadow: 2px 2px 9px 1px #686060;
 }
+nav ul li #music{
+    height: 30px;
+    width: 30px;
+    border-radius: 90px;
+    border: none;
+    padding-top: 5px;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
 nav ul li a{
     text-decoration: none;
     color: #fff;
