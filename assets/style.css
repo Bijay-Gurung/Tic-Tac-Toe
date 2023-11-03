@@ -157,7 +157,6 @@ section .main .gif{
 .content{
     background-color: rgba(225, 205, 152, 1);
     box-shadow: 2px 2px 9px 1px #686060;
-    color: #fff;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
@@ -189,7 +188,6 @@ section .main .gif{
 .profileCard{
     background-color: rgba(225, 205, 152, 1);
     box-shadow: 2px 2px 9px 1px #686060;
-    color: #fff;
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
@@ -212,9 +210,9 @@ section .main .gif{
     font-size: large;
 }
 .profileCard .body a{
-    color: #fff;
     margin-left: 35px;
     font-size: large;
+    color: #000;
 }
 .profileCard .footer #close1{
     width: 40px;
