@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Indie Flower',cursive;
+}
+body{
+    background-color: rgba(225, 205, 152, 1);
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+.title{
+    color: #fff;
+}
+nav{
+    flex: 1;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: x-large;
+}
+nav ul .home i{
+    letter-spacing: 0.5em;
+}
+nav ul .home{
+    color: #fff;
+}
+nav ul .about{
+    color: #fff;
+}
+nav ul li #toggle{
+    height: 20px;
+    width: 60px;
+    text-align: right;
+    border-radius: 15px;
+    border: none;
+    padding-top: 2px;
+    padding-right: 5px;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
+nav ul li #music{
+    height: 30px;
+    width: 30px;
+    border-radius: 90px;
+    border: none;
+    padding-top: 5px;
+    box-shadow: 2px 2px 9px 1px #686060;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav a.active,
+header nav a:hover{
+    background-color: #fff;
+    color: rgba(225, 205, 152, 1);
+    border-radius: 9px;
+}
+section{
+    display: grid;
+    grid-template-rows: repeat(6,100px);
+    grid-template-columns: repeat(14,100px);
+}
+.singlePlayer{
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 14;
+    position: relative;
+    left: 50px;
+}
+.singlePlayer .game-board{
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 14;
+    display: grid;
+    grid-template-rows: repeat(6,100px);
+    grid-template-columns: repeat(14,100px);
+}
+#div1{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    border-top: none;
+    border-left: none;
+}
+#div2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    border-top: none;
+}
+#div3{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    border-top: none;
+    border-right: none;
+}
+#div4{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    border-left: none;
+}
+#div5{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+#div6{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    border-right: none;
+}
+#div7{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    border-left: none;
+    border-bottom: none;
+}
+#div8{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    border-bottom: none;
+}
+#div9{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    border-right: none;
+    border-bottom: none;
+}
+.tile{
+    text-align: center;
+    border: 2px solid #000;
+}
