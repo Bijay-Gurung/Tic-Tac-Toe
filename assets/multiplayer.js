@@ -18,36 +18,17 @@ function initializeGameBoard() {
     }
     moves = 0;
     result.innerHTML = "";
+    currentPlayer = "X"; /* Reset to player1 */
+    hidePlayButton();
 }
 
 /* function for player Move */
 function playerMove(i) {
-    const player = "X";
     if (board[i].innerHTML === " " && result.innerHTML === "") {
-        board[i].innerHTML = player;
+        board[i].innerHTML = currentPlayer;
         moves++;
-        checkResult(player);
-        computerMove();
-    }
-}
-
-/* function for computer Move */
-function computerMove() {
-    const computer = "O";
-    if (result.innerHTML === "") {
-        const emptyTiles = [];
-        for (let i = 0; i < board.length; i++) {
-            if (board[i].innerHTML === " ") {
-                emptyTiles.push(i);
-            }
-        }
-        if (emptyTiles.length > 0) {
-            const randomIndex = Math.floor(Math.random() * emptyTiles.length);
-            const chosenTileIndex = emptyTiles[randomIndex];
-            board[chosenTileIndex].innerHTML = computer;
-            moves++;
-            checkResult(computer);
-        }
+        checkResult(currentPlayer);
+        currentPlayer = currentPlayer === "X" ? "O" : "X"; /* Switching to other Player */
     }
 }
 
@@ -79,19 +60,19 @@ function attachClickListeners() {
     }
 }
 
-/* function to show play again button */
+/* function to show Play Button */
 function showPlayButton(){
     const playAgainButton = document.getElementById("playAgain");
     playAgainButton.style.display = "block";
 }
 
-/* function to hide play again button */
+/* function to hide Play Button */
 function hidePlayButton(){
     const playAgainButton = document.getElementById("playAgain");
     playAgainButton.style.display = "none";
 }
 
-/* function to play again the game */
+/* function to Play Again the Game */
 function playAgain(){
     initializeGameBoard();
     hidePlayButton();
