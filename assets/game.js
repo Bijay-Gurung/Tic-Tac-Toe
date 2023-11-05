@@ -65,8 +65,10 @@ function checkResult(player) {
         (board[2].innerHTML === player && board[4].innerHTML === player && board[6].innerHTML === player)
     ) {
         result.innerHTML = winText;
+        showPlayButton();
     } else if (moves === 9) {
         result.innerHTML = "It's a Draw!";
+        showPlayButton();
     }
 }
 
@@ -77,6 +79,20 @@ function attachClickListeners() {
     }
 }
 
+function showPlayButton(){
+    const playAgainButton = document.getElementById("playAgain");
+    playAgainButton.style.display = "block";
+}
+
+function hidePlayButton(){
+    const playAgainButton = document.getElementById("playAgain");
+    playAgainButton.style.display = "none";
+}
+function playAgain(){
+    initializeGameBoard();
+    hidePlayButton();
+};
+
 /* Calling Function */
-initializeGameBoard();
 attachClickListeners();
+playAgain();
