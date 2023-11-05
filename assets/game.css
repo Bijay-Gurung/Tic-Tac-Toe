@@ -161,3 +161,22 @@ section{
     padding-top: 30px;
     font-size: x-large;
 }
+.results{
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    margin-top: 70px;
+}
+#playAgain{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 9px 1px #686060;
+    height: 30px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#result{
+    font-size: xx-large;
+}
