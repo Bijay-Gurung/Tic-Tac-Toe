@@ -11,6 +11,7 @@ const result = document.getElementById("result");
 const board = [tile1,tile2,tile3,tile4,tile5,tile6,tile7,tile8,tile9];
 let moves = 0;
 
+/* Function to initialize the game board */
 function initializeGameBoard() {
     for (let i = 0; i < board.length; i++) {
         board[i].innerHTML = " ";
@@ -19,6 +20,7 @@ function initializeGameBoard() {
     result.innerHTML = "";
 }
 
+/* function for player Move */
 function playerMove(i) {
     const player = "X";
     if (board[i].innerHTML === " " && result.innerHTML === "") {
@@ -29,6 +31,7 @@ function playerMove(i) {
     }
 }
 
+/* function for computer Move */
 function computerMove() {
     const computer = "O";
     if (result.innerHTML === "") {
@@ -48,6 +51,7 @@ function computerMove() {
     }
 }
 
+/* function for Game Result */
 function checkResult(player) {
     const winText = `${player} Wins!`;
     if (
@@ -66,11 +70,13 @@ function checkResult(player) {
     }
 }
 
+/* function to make tile Clickable */
 function attachClickListeners() {
     for (let i = 0; i < board.length; i++) {
         board[i].addEventListener('click', () => playerMove(i));
     }
 }
 
+/* Calling Function */
 initializeGameBoard();
 attachClickListeners();
