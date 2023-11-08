@@ -39,16 +39,6 @@ nav ul .home{
 nav ul .about{
     color: #fff;
 }
-nav ul li #toggle{
-    height: 20px;
-    width: 60px;
-    text-align: right;
-    border-radius: 15px;
-    border: none;
-    padding-top: 2px;
-    padding-right: 5px;
-    box-shadow: 2px 2px 9px 1px #686060;
-}
 nav ul li #music{
     height: 30px;
     width: 30px;
@@ -227,4 +217,163 @@ section .main .gif{
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 9px 1px #686060;
+}
+@media only screen and (min-width:360px) and (max-width:640px){
+    header{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #fff;
+        margin-top: 10px;
+    }
+    .title{
+        color: #fff;
+        font-size: small;
+    }
+    nav{
+        flex: 1;
+        text-align: center;
+    }
+    nav ul{
+        list-style-type: none;
+        display: inline-block;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 50px;
+        font-size: small;
+    }
+    nav ul .home i{
+        display: none;
+    }
+    nav ul .home{
+        color: #fff;
+        margin-left: 30px;
+    }
+    nav ul .about{
+        color: #fff;
+    }
+    nav ul li #music{
+        height: 20px;
+        width: 15px;
+        border-radius: 90px;
+        border: none;
+        box-shadow: 2px 2px 9px 1px #686060;
+    }
+    nav ul li img{
+        height: 10px;
+        width: 10px;
+        padding-bottom: 5px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    header nav a.active,
+    header nav a:hover{
+        background-color: #fff;
+        color: rgba(225, 205, 152, 1);
+        border-radius: 9px;
+    }
+    section{
+        padding-top: 30px;
+        display: grid;
+        grid-template-rows: repeat(5,100px);
+        grid-template-columns: repeat(4,100px);
+    }
+    .main{
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: #ffffff05;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(25px);
+        box-shadow: 2px 2px 9px 1px #686060;
+        border-radius: 30px;
+        border: none;
+        margin-top: 50px;
+        position: relative;
+        right: 20px;
+    }
+    section ul li{
+        list-style-type: none;
+        position: relative;
+        top: 40px;
+        left: 24%;
+    }
+    .btn{
+        border: none;
+        height: 30px;
+        width: 120px;
+        position: relative;
+        right: 8px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 9px 1px #686060;
+        font-size: large;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    section .main .gif{
+        height: 77px;
+        width: 200px;
+        background-image: url(/gif/giphy.gif);
+        background-position: center;
+        background-size: cover;
+        border-radius: 30px;
+        position: relative;
+        top: 75px;
+        border: none;
+    }
+    section #tab2{
+        height: 441px;
+        width: 268px;
+        grid-row-start: 1;
+        position: relative;
+        top: -5px;
+        right: 58px;
+        background-color: #ffffff05;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(25px);
+        box-shadow: 2px 2px 9px 1px #686060;
+        border-radius: 30px;
+        border: none;
+    }
+    .image {
+        height: 90px;
+        width: 25%;
+        background-image: url(/images/Tic\ Tac\ Toe.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 23px;
+        box-shadow: 2px 2px 9px 1px #686060;
+        float: left;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .paragraph {
+        height: 300px;
+        width: 60%;
+        float: right;
+        padding-top: 22px;
+        padding-right: 20px;
+        font-size: xx-small;
+    }
+    .profileCard .body {
+        margin-left: 19%;
+    }
+    .helpcontent {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background-color: #ffffff05;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(25px);
+        font-size: x-small;
+    }
 }
