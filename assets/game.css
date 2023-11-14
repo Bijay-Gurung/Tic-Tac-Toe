@@ -347,3 +347,49 @@ section{
         margin-left: 50px;
     }
 }
+@media only screen and (min-width: 360px) and (max-width: 640px){
+    header {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+        margin-top: 10px;
+    }
+    .title {
+        color: #fff;
+        font-size: x-large;
+    }
+    nav ul li {
+        display: inline-block;
+        margin-right: 50px;
+        font-size: larger;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 140px;
+        font-size: larger;
+    }
+    .singlePlayer .game-board {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-rows: repeat(5,50px);
+    grid-template-columns: repeat(4,50px);
+    position: relative;
+    top: 175px;
+    left: 60px;
+}
+#playAgain{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px 9px 1px #686060;
+    height: 30px;
+    width: 110px;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: large;
+}
+}
