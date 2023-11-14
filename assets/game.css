@@ -180,3 +180,170 @@ section{
 #result{
     font-size: xx-large;
 }
+@media only screen and (min-width:360px) and (max-width:640px){
+    header{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-bottom: 1px solid #fff;
+        margin-top: 10px;
+    }
+    .title{
+        color: #fff;
+        font-size:large;
+    }
+    nav{
+        flex: 1;
+        text-align: center;
+    }
+    nav ul{
+        list-style-type: none;
+        display: inline-block;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 90px;
+        font-size: large;
+    }
+    nav ul .home i{
+        letter-spacing: 0.5em;
+    }
+    nav ul .home{
+        color: #fff;
+        margin-left: 30px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    header nav a.active,
+    header nav a:hover{
+        background-color: #fff;
+        color: rgba(225, 205, 152, 1);
+        border-radius: 9px;
+    }
+    section{
+        padding-top: 30px;
+        display: grid;
+        grid-template-rows: repeat(5,50px);
+        grid-template-columns: repeat(4,50px);
+    }
+    .singlePlayer{
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        position: relative;
+        left: 50px;
+    }
+    .singlePlayer .game-board{
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: grid;
+        grid-template-rows: repeat(5,50px);
+        grid-template-columns: repeat(4,50px); 
+        position: relative;
+        top: 90px;
+        left: 50px;
+    }
+    #div1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-top: none;
+        border-left: none;
+    }
+    #div2{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-top: none;
+    }
+    #div3{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        border-top: none;
+        border-right: none;
+    }
+    #div4{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-top: none;
+        border-left: none;
+    }
+    #div5{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-top: none;
+    }
+    #div6{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        border-top: none;
+        border-right: none;
+    }
+    #div7{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    #div8{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-top: none;
+        border-bottom: none;
+    }
+    #div9{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .tile{
+        text-align: center;
+        border: 2px solid #000;
+        padding-bottom: 40px;
+        font-size: x-large;
+    }
+    .results{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 70px;
+    }
+    #playAgain{
+        border: none;
+        border-radius: 15px;
+        box-shadow: 2px 2px 9px 1px #686060;
+        height: 30px;
+        width: 70px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    #result{
+        font-size: x-large;
+        margin-left: 50px;
+    }
+}
