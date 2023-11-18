@@ -425,3 +425,51 @@ section{
         grid-template-columns: repeat(8,100px);
     }
 }
+@media only screen and (min-width:1025px) and (max-width:1200px){
+    .title{
+        font-size: xxx-large;
+    }
+    nav ul li{
+        font-size: xx-large;
+        margin-right: 170px;
+    }
+    section {
+        display: grid;
+        grid-template-rows: repeat(6,100px);
+        grid-template-columns: repeat(8,100px);
+    }
+    .singlePlayer {
+        grid-row-start: 1;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        position: relative;
+        top: 100px;
+        left: -90px;
+    }
+    #playAgain {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 2px 2px 9px 1px #686060;
+        height: 46px;
+        width: 110px;
+        margin-top: 20px;
+        margin-left: -7px;
+        font-size: x-large;
+    }
+    .singlePlayer .game-board {
+        grid-row-start: 1;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        display: grid;
+        grid-template-rows: repeat(6,100px);
+        grid-template-columns: repeat(8,100px);
+    }
+    #playAgain{
+        height: 50px;
+        width: 163px;
+        font-size: xx-large;
+        position: relative;
+        left: -25px;
+    }
+}
