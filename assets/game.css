@@ -347,7 +347,7 @@ section{
         margin-left: 50px;
     }
 }
-@media only screen and (min-width: 360px) and (max-width: 640px){
+@media only screen and (min-width: 375px) and (max-width: 667px){
     header {
         display: flex;
         align-items: center;
@@ -362,12 +362,7 @@ section{
     }
     nav ul li {
         display: inline-block;
-        margin-right: 50px;
-        font-size: larger;
-    }
-    nav ul li{
-        display: inline-block;
-        margin-right: 140px;
+        margin-right: 70px;
         font-size: larger;
     }
     .singlePlayer .game-board {
@@ -379,7 +374,7 @@ section{
     grid-template-rows: repeat(5,50px);
     grid-template-columns: repeat(4,50px);
     position: relative;
-    top: 175px;
+    top: 100px;
     left: 60px;
 }
 #playAgain{

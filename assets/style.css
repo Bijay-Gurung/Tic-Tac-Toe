@@ -482,3 +482,26 @@ section .main .gif{
         border: none;
     }
 }
+@media only screen and (min-width:441px) and (max-width:768px){
+    section #tab2 {
+        height: 441px;
+        width: 268px;
+        grid-row-start: 1;
+        position: relative;
+        top: -34px;
+        left: -22px;
+        background-color: #ffffff05;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(25px);
+        box-shadow: 2px 2px 9px 1px #686060;
+        border-radius: 30px;
+        border: none;
+    }
+    .paragraph{
+        font-size: 10px;
+    }
+    .profileCard .body img {
+        border-radius: 9px;
+        margin-left: 30px;
+    }
+}
