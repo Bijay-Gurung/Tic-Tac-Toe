@@ -1,0 +1,55 @@
+Minimax with Alpha-Beta Pruning: Methodology in Tic Tac Toe
+
+1. What is the Minimax Algorithm?
+Minimax is a classic decision-making algorithm used in two-player, zero-sum games (like Tic Tac Toe, Chess, or Checkers). It works by simulating every possible future move from the current board state to determine the best choice.
+
+Goal:
+Maximizer (AI): Tries to get the highest possible score.
+Minimizer (Human): Tries to get the lowest possible score for the AI.
+
+The algorithm recursively "looks ahead" into the future until it reaches an end state (Win, Loss, or Draw).
+
+2. Scoring System
+To make a decision, we assign a numeric value to game outcomes:
+AI Wins: +10 points (minus depth to prefer faster wins).
+Human Wins: -10 points (plus depth to prefer longer survive).
+Draw: 0 points.
+
+Note on Depth: By including the "depth" in the score (how many moves away the end is), the AI doesn't just look for any win; it looks for the fastest way to win and the slowest way to lose.
+
+3. Alpha-Beta Pruning Methodology
+Standard Minimax explores every single branch of the game tree. For Tic Tac Toe, there are 255,168 possible board states. While computers are fast, this becomes inefficient for more complex games.
+
+Alpha-Beta Pruning is an optimization that "prunes" (cuts off) branches that it knows won't lead to a better result than what it has already found.
+
+The Parameters:
+Alpha: The best score the Maximizer (AI) is already guaranteed to get.
+Beta: The best score the Minimizer (Human) is already guaranteed to get.
+
+The Pruning Rule (Beta <= Alpha):
+1. The AI starts searching a branch for its move.
+2. It finds a move that is exceptionally good for the Human player (Minimizer).
+3. If this move is so bad for the AI that the Human would never let the game reach that point, or if the AI already has a better alternative move, the AI stops searching that entire branch.
+
+In simple terms: If I already know this current path is worse than one I've already found, there is no point looking further down this path.
+
+4. How it works:
+
+1. Base Case: Checks if the game is over (getWinner).
+2. Maximizing (Computer Symbol):
+   Sets a temporary move on the board.
+   Calls minimax again to see what the Human would do next.
+   Updates alpha with the best score found.
+   Pruning: If beta <= alpha, it breaks the loop (it stops searching).
+3. Minimizing (Player Symbol):
+   Sets a temporary move on the board.
+   Calls minimax again to see what the AI would do next.
+   Updates beta with the lowest score (best for human).
+   Pruning: If beta <= alpha, it breaks the loop.
+
+5. Result: An Unbeatable AI
+Because Tic Tac Toe is a solved game (one where the perfect strategy always results in a win or a draw), and because Minimax explores all possibilities, the AI will never make a mistake.
+
+If the AI can win, it will.
+If it cannot win, it will force a draw.
+It is impossible to win against this AI unless you find a bug in the symbol logic!
