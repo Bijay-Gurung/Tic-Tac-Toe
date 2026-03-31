@@ -50,6 +50,5 @@ In simple terms: If I already know this current path is worse than one I've alre
 5. Result: An Unbeatable AI
 Because Tic Tac Toe is a solved game (one where the perfect strategy always results in a win or a draw), and because Minimax explores all possibilities, the AI will never make a mistake.
 
-If the AI can win, it will.
 If it cannot win, it will force a draw.
-It is impossible to win against this AI unless you find a bug in the symbol logic!
+It is impossible to win against this.
