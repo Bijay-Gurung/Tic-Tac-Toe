@@ -1,4 +1,4 @@
-Minimax with Alpha-Beta Pruning: Methodology in Tic Tac Toe
+:D Minimax with Alpha-Beta Pruning: Methodology in Tic Tac Toe
 
 1. What is the Minimax Algorithm?
 Minimax is a classic decision-making algorithm used in two-player, zero-sum games (like Tic Tac Toe, Chess, or Checkers). It works by simulating every possible future move from the current board state to determine the best choice.
